@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CleanAir — чим ти дихаєш зараз</title>
+  <title>CleanAir - чим ти дихаєш зараз</title>
   <meta name="description" content="CleanAir збирає дані сенсорів і метеостанцій та показує рівень забруднення повітря у твоєму районі простим кольором і прогнозом на добу.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232E9E6A'/%3E%3Cstop offset='.4' stop-color='%23E3B505'/%3E%3Cstop offset='.7' stop-color='%23EE8434'/%3E%3Cstop offset='1' stop-color='%23CF3E4E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='12' fill='none' stroke='url(%23g)' stroke-width='5'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Unbounded:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -39,7 +39,7 @@
       <div class="wrap hero-inner">
         <div class="hero-copy">
           <h1>Чим ти дихаєш зараз?</h1>
-          <p class="lead">CleanAir збирає дані сенсорів і метеостанцій в одному місці та показує, яке повітря у твоєму районі — одним кольором, без хімічних формул.</p>
+          <p class="lead">CleanAir збирає дані сенсорів і метеостанцій в одному місці та показує, яке повітря у твоєму районі - одним кольором, без хімічних формул.</p>
           <div class="hero-actions">
             <a class="btn" href="mailto:sotapet0215@gmail.com?subject=%D0%A5%D0%BE%D1%87%D1%83%20%D1%81%D0%BF%D1%80%D0%BE%D0%B1%D1%83%D0%B2%D0%B0%D1%82%D0%B8%20CleanAir">Хочу спробувати першим</a>
             <a class="link" href="#features">Подивитися, як це працює</a>
@@ -57,9 +57,7 @@
           <div class="disc">
             <div class="disc-glow" aria-hidden="true"></div>
             <div class="disc-body">
-              <span class="disc-level" id="disc-level">помірно</span>
-              <span class="disc-value"><span id="disc-percent">87</span><small>% норми</small></span>
-              <span class="disc-note" id="disc-note">найгірший показник — PM2.5</span>
+              <span class="disc-level" id="disc-level">Помірно</span>
             </div>
           </div>
 
@@ -67,11 +65,6 @@
           <p class="warning" id="disc-warning" hidden></p>
           <p class="demo-note">Демо-дані з прототипу CleanAir, середнє за останню годину.</p>
         </div>
-      </div>
-
-      <!-- Бігучий рядок -->
-      <div class="ticker" aria-label="Поточні показники по районах (демо)">
-        <div class="ticker-track" id="ticker-track"></div>
       </div>
     </section>
 
@@ -97,7 +90,7 @@
                 <div class="phone" aria-hidden="true">
                   <div class="phone-screen screen-check">
                     <div class="ps-top"><span>Центр</span><span>14:05</span></div>
-                    <div class="ps-disc"><b>помірно</b><span>87% норми</span></div>
+                    <div class="ps-disc"><b>Помірно</b><span>87% норми</span></div>
                     <ul class="ps-bars">
                       <li><span>PM2.5</span><i style="--v:.87"></i><em>13</em></li>
                       <li><span>NO₂</span><i style="--v:.84"></i><em>21</em></li>
@@ -141,7 +134,7 @@
               <article class="slide" role="group" aria-roledescription="слайд" aria-label="3 з 3">
                 <div class="slide-text">
                   <h3>Закономірності для екологів</h3>
-                  <p>Обери період і територію — CleanAir порахує середні значення, перевірить перевищення норм і покаже, в яку частину доби повітря найбрудніше.</p>
+                  <p>Обери період і територію - CleanAir порахує середні значення, перевірить перевищення норм і покаже, в яку частину доби повітря найбрудніше.</p>
                   <p>Так легше знайти причину: трафік, опалення чи викиди підприємства.</p>
                 </div>
                 <div class="phone" aria-hidden="true">
@@ -154,7 +147,7 @@
                       <div style="--h:.55"><i></i><span>день</span></div>
                       <div style="--h:.71"><i></i><span>вечір</span></div>
                     </div>
-                    <p class="ps-hint"><b>Найчастіше — вранці.</b> Варто перевірити, що працює на ранковій зміні.</p>
+                    <p class="ps-hint"><b>Найчастіше - вранці.</b> Варто перевірити, що працює на ранковій зміні.</p>
                   </div>
                 </div>
               </article>
@@ -180,10 +173,10 @@
       <div class="wrap scale-inner">
         <div class="scale-copy">
           <h2 id="scale-title">Один колір замість п'яти цифр</h2>
-          <p>CleanAir порівнює кожен показник із його нормою і бере найгірший. Якщо хоч одна речовина вийшла за межу — колір це покаже, навіть коли решта в порядку.</p>
+          <p>CleanAir порівнює кожен показник із його нормою і бере найгірший. Якщо хоч одна речовина вийшла за межу - колір це покаже, навіть коли решта в порядку.</p>
         </div>
 
-        <div class="scale" role="img" aria-label="Шкала: до 50% норми — добре, до 100% — помірно, до 200% — шкідливо, понад 200% — небезпечно">
+        <div class="scale" role="img" aria-label="Шкала: до 50% норми - добре, до 100% - помірно, до 200% - шкідливо, понад 200% - небезпечно">
           <div class="scale-bar">
             <span class="seg good"></span>
             <span class="seg moderate"></span>
@@ -203,19 +196,42 @@
           </ul>
         </div>
 
-        <table class="norms">
-          <caption>Норми, з якими порівнюються показники</caption>
-          <thead>
-            <tr><th scope="col">Речовина</th><th scope="col">Норма</th><th scope="col">Звідки береться</th></tr>
-          </thead>
-          <tbody>
-            <tr><th scope="row">PM2.5</th><td>15 мкг/м³</td><td>Дрібний пил: вихлопи, опалення, будівництво</td></tr>
-            <tr><th scope="row">PM10</th><td>45 мкг/м³</td><td>Пил із доріг, будмайданчиків, кар'єрів</td></tr>
-            <tr><th scope="row">NO₂</th><td>25 мкг/м³</td><td>Двигуни автомобілів, ТЕЦ</td></tr>
-            <tr><th scope="row">CO</th><td>4 мг/м³</td><td>Неповне згоряння палива</td></tr>
-            <tr><th scope="row">SO₂</th><td>40 мкг/м³</td><td>Промисловість, спалювання вугілля й мазуту</td></tr>
-          </tbody>
-        </table>
+        </div>
+
+      <div class="wrap">
+        <h3 class="tiles-title">Що саме CleanAir міряє</h3>
+        <ul class="tiles">
+          <li class="tile">
+            <span class="tile-formula">PM<sub>2.5</sub></span>
+            <span class="tile-name">Дрібний пил</span>
+            <span class="tile-norm"><b>15</b> мкг/м³</span>
+            <span class="tile-from">Вихлопи, опалення, будівництво. Найнебезпечніший: проникає глибоко в легені.</span>
+          </li>
+          <li class="tile">
+            <span class="tile-formula">PM<sub>10</sub></span>
+            <span class="tile-name">Крупний пил</span>
+            <span class="tile-norm"><b>45</b> мкг/м³</span>
+            <span class="tile-from">Пил із доріг, будмайданчиків і кар'єрів.</span>
+          </li>
+          <li class="tile">
+            <span class="tile-formula">NO<sub>2</sub></span>
+            <span class="tile-name">Діоксид азоту</span>
+            <span class="tile-norm"><b>25</b> мкг/м³</span>
+            <span class="tile-from">Двигуни автомобілів і ТЕЦ. Найбільше біля жвавих доріг.</span>
+          </li>
+          <li class="tile">
+            <span class="tile-formula">CO</span>
+            <span class="tile-name">Чадний газ</span>
+            <span class="tile-norm"><b>4</b> мг/м³</span>
+            <span class="tile-from">Неповне згоряння палива: машини, котельні, пожежі.</span>
+          </li>
+          <li class="tile">
+            <span class="tile-formula">SO<sub>2</sub></span>
+            <span class="tile-name">Діоксид сірки</span>
+            <span class="tile-norm"><b>40</b> мкг/м³</span>
+            <span class="tile-from">Промисловість, спалювання вугілля й мазуту, порт.</span>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -223,15 +239,15 @@
     <section class="plans" id="plans" aria-labelledby="plans-title">
       <div class="wrap">
         <div class="section-head">
-          <h2 id="plans-title">Безкоштовно для мешканців, Pro для фахівців</h2>
+          <h2 id="plans-title">Безкоштовно для мешканців, Premium для фахівців</h2>
           <p>Дані про повітря мають бути відкритими для всіх. Платять лише ті, кому потрібні робочі інструменти аналізу.</p>
         </div>
 
         <div class="plan-grid">
           <div class="plan">
-            <h3>Мешканець</h3>
-            <p class="price">0 грн</p>
-            <p class="plan-for">Для тих, хто хоче знати, чи можна відчинити вікно і йти на пробіжку.</p>
+            <h3>Free</h3>
+            <p class="price">$0<small>назавжди</small></p>
+            <p class="plan-for">Для мешканців, які хочуть знати, чи можна відчинити вікно і йти на пробіжку.</p>
             <ul>
               <li>Рівень забруднення у твоєму районі</li>
               <li>Прогноз на 24–48 годин</li>
@@ -243,17 +259,17 @@
           </div>
 
           <div class="plan plan-pro">
-            <h3>Pro</h3>
-            <p class="price">за підпискою</p>
-            <p class="plan-for">Для екологів, міських служб і дослідників.</p>
+            <h3>Premium</h3>
+            <p class="price">$4.99<small>на місяць</small></p>
+            <p class="plan-for">Для екологів, міських служб і дослідників, яким потрібні робочі інструменти.</p>
             <ul>
-              <li>Усе з безкоштовного плану</li>
+              <li>Усе з плану Free</li>
               <li>Історія вимірювань із кожного сенсора</li>
               <li>Фільтри за районом, часом і речовиною</li>
               <li>Аналіз закономірностей і довірчий інтервал прогнозу</li>
               <li>Експорт звіту за готовим шаблоном</li>
             </ul>
-            <a class="btn" href="mailto:sotapet0215@gmail.com?subject=CleanAir%20Pro">Запитати про Pro</a>
+            <a class="btn" href="mailto:sotapet0215@gmail.com?subject=CleanAir%20Premium">Запитати про Premium</a>
           </div>
         </div>
       </div>
@@ -262,10 +278,10 @@
   </main>
 
   <footer class="site-footer" id="contact">
-    <div class="wrap footer-inner">
+    <div class="wrap footer-card">
       <div class="footer-main">
         <p class="footer-title">Є питання чи ідея для CleanAir?</p>
-        <p class="footer-sub">Напиши — відповім особисто.</p>
+        <p class="footer-sub">Напиши - відповім особисто.</p>
         <ul class="contacts">
           <li>
             <a href="mailto:sotapet0215@gmail.com">
